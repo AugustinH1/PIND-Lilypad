@@ -80,32 +80,6 @@ char set = 1;
 void loop()
 {
 
-  //getion du module bluetooth
-  // if (moduleBluetooth.available()) {
-
-  //   val = moduleBluetooth.read();
-  //   Serial.println(val);
-  // }
-
-
-
-  //getion du volume avec potentiomètre
-  //Serial.println(analogRead(potvolume));
-
-
-  //Serial.println( moduleBluetooth.read() );
-
-  
-//  set = moduleBluetooth.read();
-
-//   if(set == "1")
-//     Serial.println("1");
-//   if(set == "2")
-//     Serial.println("2");
-  
-
-
-
   //Serial.println(abs(map(analogRead(potvolume), 0, 1023, 1, 30)-volume));
   if(abs(map(analogRead(potvolume), 0, 1023, 1, 30)-volume) > 1){
     volume = map(analogRead(potvolume), 0, 1023, 1, 30);
